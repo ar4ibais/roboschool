@@ -1,0 +1,55 @@
+.estates {
+    margin-bottom: 100px;
+    background-color: #F9F9F9;
+    font-family: $font;
+    font-weight: 400;
+    padding: 100px 0;
+    position: relative;
+    &__title {
+        font-weight: 600;
+        font-size: 50px;
+        line-height: 160%;
+        margin-bottom: 50px;
+        color: $dark;
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__popup {
+        font-size: 16px;
+        line-height: 160%;
+        color: $dark;
+        padding: 15px 20px;
+        border-radius: 5px;
+        background-color: #fff;
+        display: none;
+        position: absolute;
+        top: -60px;
+        right: 0;
+    }
+    &__item {
+        max-width: 360px;
+    }
+    &__item--3 {
+        position: relative;
+    }
+    &__i {
+        cursor: pointer;
+        position: absolute;
+        top: 5px;
+        right: 220px;
+    }
+    &__item-title {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 160%;
+        color: $dark;
+        margin-bottom: 20px;
+    }
+    &__item-text {
+        font-size: 18px;
+        line-height: 160%;
+        color: rgba(20, 16, 36, 0.7);        ;
+    }
+}

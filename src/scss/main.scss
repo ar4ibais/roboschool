@@ -1,0 +1,11 @@
+@import 'global';
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+// подключения компонентов страницы
+@import "./components/header";
+@import "./components/hero";
+@import "./components/stats";
+@import "./components/estates";
+
+// Основыные стили

@@ -1,0 +1,36 @@
+.hero {
+    color: #fff;
+    background-color: $dark;
+    padding-top: 85px;
+    font-family: $font;
+    font-weight: 400;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__info {
+        max-width: 520px;
+        padding-top: 150px;
+    }
+    &__img {
+        max-width: 635px;
+        max-height: 920px;
+        object-fit: cover;
+    }
+    &__title {
+        font-weight: 600;
+        font-size: 70px;
+        line-height: 160%;
+        margin-bottom: 20px;
+    }
+    &__descr {
+        font-size: 20px;
+        line-height: 160%;
+        margin-bottom: 50px;
+    }
+    &__link {
+        padding: 25px 50px;
+        background-color: #D52027;
+        border-radius: 5px;
+    }
+}

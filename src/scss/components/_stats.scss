@@ -1,0 +1,32 @@
+.stats {
+    font-family: $font;
+    font-weight: 400;
+    margin: 100px 0;
+    &__descr {
+        font-size: 30px;
+        line-height: 160%;
+        margin-bottom: 50px;
+    }
+    &__descr span {
+        font-weight: 600;
+    }
+    &__params {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__param {
+        max-width: 260px;
+    }
+    &__num {
+        font-weight: 600;
+        font-size: 70px;
+        line-height: 160%;
+        color: $red;
+        margin-bottom: 25px;
+    }
+    &__param-desc {
+        font-size: 18px;
+        line-height: 160%;
+        color: rgba(20, 16, 36, 0.7);
+    }
+}

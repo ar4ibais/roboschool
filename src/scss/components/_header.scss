@@ -1,0 +1,35 @@
+.header {
+    background-color: $dark;
+    padding-top: 30px;
+    &__container {
+        max-width: 1755px;
+        padding: 0 15px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__phone {
+        font-family: 'Jost';
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 160%;
+        color: #fff;
+    }
+}
+
+.menu {
+    &__list {
+        display: flex;
+    }
+    &__item + .menu__item {
+        margin-left: 40px;
+    }
+    &__link {
+        font-family: $font;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 160%;
+        color: #fff;
+    }
+}
