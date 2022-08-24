@@ -11,7 +11,7 @@
 }
 
 .hide {
-    display: none;
+    display: none !important;
 }
 
 .fade {
@@ -25,6 +25,10 @@
     font-size: 50px;
     line-height: 160%;
     color: $dark;
+}
+
+.showModal {
+    display: flex;
 }
 
 @keyframes fade {

@@ -1,0 +1,20 @@
+.footer {
+    background-color: $dark;
+    color: #fff;
+    font-family: $font;
+    font-weight: 400;
+    &__container {
+        max-width: 1755px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+    &__inner {
+        padding: 40px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &__copy {
+        margin-top: 10px;
+    }
+}

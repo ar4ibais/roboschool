@@ -1,0 +1,110 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $font;
+    font-weight: 400;
+    color: $dark;
+    .modal__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        opacity: .3;
+        z-index: 0;
+    }
+    &__window {
+        position: relative;
+        z-index: 2;
+        width: 940px;
+        height: 770px;
+        background: #FFFFFF;
+        border-radius: 20px;
+        padding: 40px;
+    }
+    &__top {
+        margin-bottom: 40px;
+    }
+    &__top-inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__top-info__inner {
+        display: flex;
+    }
+    &__top-image {
+        margin-right: 40px;
+    }
+    &__top-name {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 160%;
+        margin-bottom: 10px;
+    }
+    &__top-tech {
+        font-size: 18px;
+        line-height: 160%;
+        margin-bottom: 10px;
+    }
+    &__top-socials {
+        display: flex;
+    }
+    &__top-social + .modal__top-social {
+        margin-left: 10px;
+    }
+    &__close {
+        font-size: 18px;
+        line-height: 160%;
+        cursor: pointer;
+    }
+    &__tabs {
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 15px;
+        border-bottom: 1px solid rgba(20, 16, 36, 0.11);
+        margin-bottom: 15px;
+        font-size: 20px;
+        line-height: 160%;
+    }
+    &__tab {
+        cursor: pointer;
+    }
+    &__tab--active {
+        color: $red;
+        cursor: default;
+    }
+    &__content {
+        overflow-y: scroll;
+        max-height: 340px;
+        &::-webkit-scrollbar {
+            width: 5px;
+            height: 345px;
+        }
+        &::-webkit-scrollbar-track {
+            background: rgba(20, 16, 36, 0.08);
+        }
+        &::-webkit-scrollbar-thumb {
+            background: #141024;
+            border-radius: 40px;
+            cursor: pointer;
+        }
+        p {
+            font-size: 20px;
+            line-height: 160%;
+            margin-bottom: 30px;
+        }
+        h5 {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 160%;
+            margin-bottom: 20px;
+        }
+    }
+}

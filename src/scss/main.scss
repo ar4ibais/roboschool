@@ -9,5 +9,11 @@
 @import "./components/estates";
 @import "./components/slider";
 @import "./components/prices";
+@import "./components/form";
+@import "./components/footer";
+@import "./components/modal";
 
 // Основыные стили
+html {
+    scroll-behavior: smooth;
+}
