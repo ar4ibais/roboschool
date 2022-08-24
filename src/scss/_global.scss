@@ -1,3 +1,5 @@
+@import 'vars';
+
 .container {
     max-width: 1190px;
     margin: 0 auto;
@@ -15,6 +17,14 @@
 .fade {
     animation-name: fade;
     animation-duration: .15s;
+}
+
+.title {
+    font-family: $font;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 160%;
+    color: $dark;
 }
 
 @keyframes fade {
