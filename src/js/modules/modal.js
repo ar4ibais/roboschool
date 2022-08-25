@@ -1,11 +1,12 @@
 const modal = () => {
-    const modalTriggers = document.querySelectorAll('.slider__link'),
+    const modalTriggers = document.querySelectorAll('[data-modal]'),
           modalCloseBtn = document.querySelector('.modal__close'),
           modal = document.querySelector('.modal');
 
     function closeModal() {
         modal.classList.add('hide');
         modal.classList.remove('showModal');
+        document.documentElement.style.overflow = '';
     }
 
     function openModal() {
@@ -22,7 +23,6 @@ const modal = () => {
     });
 
     modalCloseBtn.addEventListener('click', () => {
-        document.documentElement.style.overflow = '';
         closeModal();
     });
 
